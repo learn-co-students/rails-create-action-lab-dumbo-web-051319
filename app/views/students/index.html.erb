@@ -1,5 +1,11 @@
+<h1>Hello Student!</h1>
 <div>
-  <% @students.each do |student| %>
-    <div><%= link_to student.to_s, student_path(student) %></div>
+  <ul>
+    <% @students.each do |student| %> <br>
+    <%= link_to student.to_s, student_path(student) %>
+  </ul>
+  <!-- <label>  student, students_post %> </label> --> <br>
+<ul>
+
+<%= link_to "New student", new_student_url %> <br> </ul>
   <% end %>
-</div>
